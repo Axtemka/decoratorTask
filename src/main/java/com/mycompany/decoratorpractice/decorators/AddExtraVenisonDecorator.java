@@ -12,12 +12,12 @@ public class AddExtraVenisonDecorator extends BaseDecorator{
     
     @Override
     public String getOrderName(){
-        return wrapper.getOrderName() + " +DOUBLE VENISON";
+        return super.getOrderName() + " +DOUBLE VENISON";
     }
     
     @Override
     public Integer getTotalCost(){
-        return wrapper.getTotalCost() + 20;
+        return super.getTotalCost() + 20;
     }
     
 }

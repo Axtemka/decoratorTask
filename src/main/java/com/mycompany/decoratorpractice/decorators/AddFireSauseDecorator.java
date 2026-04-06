@@ -12,12 +12,12 @@ public class AddFireSauseDecorator extends BaseDecorator{
 
     @Override
     public String getOrderName(){
-        return wrapper.getOrderName() + " +FIRE SAUCE";
+        return super.getOrderName() + " +FIRE SAUCE";
     }
     
     @Override
     public Integer getTotalCost(){
-        return wrapper.getTotalCost() + 10;
+        return super.getTotalCost() + 10;
     }
     
 }

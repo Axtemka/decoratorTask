@@ -11,7 +11,7 @@ import com.mycompany.decoratorpractice.data.Component;
  * @author temdo
  */
 abstract public class BaseDecorator implements Component{
-    protected Component wrapper;
+    private Component wrapper;
     
     public void addDecorator(Component c){
         wrapper = c;

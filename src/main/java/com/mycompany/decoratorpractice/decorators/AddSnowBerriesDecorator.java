@@ -11,11 +11,11 @@ package com.mycompany.decoratorpractice.decorators;
 public class AddSnowBerriesDecorator extends BaseDecorator{
     @Override
     public String getOrderName(){
-        return wrapper.getOrderName() + " +SNOW BERRIES";
+        return super.getOrderName() + " +SNOW BERRIES";
     }
     
     @Override
     public Integer getTotalCost(){
-        return wrapper.getTotalCost() + 6;
+        return super.getTotalCost() + 6;
     }
 }
